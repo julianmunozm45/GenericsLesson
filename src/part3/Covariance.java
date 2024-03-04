@@ -31,10 +31,6 @@ public class Covariance {
 //            return List.of("");
 //        }
 
-//        public Set<String> play () { // fails due to being covariant
-//            return Set.of();
-//        }
-
         public String sleep() { //
             return "sleeping at a 92 degree angled bed";
         }

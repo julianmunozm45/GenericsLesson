@@ -27,6 +27,19 @@ public interface UserRepository extends JpaRepository<Foo, Long> { }
 Los tipos genéricos se evaluan en tiempo de compilación. En tiempo de ejecución los tipos genéricos son borrados.
 Esto se hizo porque en las primeras versiones de Java no existian los genéricos. Entonces para mantener la compatibilidad,
 los tipos de datos genéricos son convertidos a Object después de que el código compila.
+- [Crate.java](src/part3/Crate)
+- [Covariance.java](src/part3/Covariance.java)
+- [OverLoading.java](src/part3/OverLoading.java)
+
+
+### Interfaces y métodos genericos
+Las interfaces también puede definirse para varios tipos de objectos por medio de genéricos. Esto nos permite reutilizar 
+código por medio de contratos flexibles. Igualmente los métodos también pueden recibir tipos de datos genéricos para
+reutilizar código.
+- [QueueEventHandler.java](src/part4/QueueEventHandler)
+
+### Limitaciones
+- [ForbiddenGenerics.java](src/part5/ForbiddenGenerics.java)
 
 ### Algunas conveciones
 - E para elementos

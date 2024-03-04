@@ -25,7 +25,6 @@ public class QueueConsumer {
         var push3 = new PushMessageEvent("ye13jf", 19817L, "Happy new year!", Vendor.PINPOINT);
         var push4 = new PushMessageEvent("fur3k3", 86811L, "Discounts at sanandresito :o", Vendor.APNS);
         var pushQueue = new LinkedList<PushMessageEvent>();
-
         pushQueue.offer(push1);
         pushQueue.offer(push2);
         pushQueue.offer(push3);
